@@ -1,0 +1,219 @@
+
+
+
+<!-- headers  -->
+<h1>Heading Level 1</h1>
+<h2>Heading Level 2</h2>
+<h3>Heading Level 3</h3>
+<h4>Heading Level 4</h4>
+<h5>Heading Level 5</h5>
+<h6>Heading Level 6</h6>
+
+<h2>---------------------------------------------------------------------------</h2>
+
+<h2> Bolding using strong and b  </h2>
+<!-- Strong importance -->
+<p><strong>Caution:</strong> Falling rocks.</p>
+
+<!-- Stylistically offset -->
+<p>This recipe calls for <b>bacon</b> and <b>baconnaise</b>.</p>
+
+<h2>---------------------------------------------------------------------------</h2>
+
+<h2> Italisize  </h2>
+<!-- Stressed emphasis -->
+<p>I <em>love</em> Chicago!</p>
+
+<!-- Alternative voice or tone -->
+<p>The name <i>Shay</i> means a gift.</p>
+
+<h2>---------------------------------------------------------------------------</h2>
+
+<h2>Building structure </h2>
+<img alt="Building Structure" 
+    src="https://learn.shayhowe.com/assets/images/courses/html-css/getting-to-know-html/building-structure.png"
+    width = "25%" 
+    style="margin-bottom: 1px;">
+
+
+
+<h2>---------------------------------------------------------------------------</h2>
+<h2> href</h2>
+
+<!-- Relative Path -->
+<!-- <a href="about.html">About</a> -->
+
+<!-- Absolute Path -->
+<a href="http://www.google.com/">Google</a>
+
+<br>
+<!-- populating an email including mailto, subject, and body-->
+<a href="mailto:shay@awesome.com?subject=Reaching%20Out&body=How%20are%20you">Email Me</a>
+
+
+
+<br>
+<!-- target to say where the link will open up, _blank for a new window-->
+<a href="http://shayhowe.com/" target="_blank">Shay Howe</a>
+
+
+
+<h2>---------------------------------------------------------------------------</h2>
+
+
+<h2> Lists </h2>
+<h3> Unordered Lists</h3>
+<ul>
+    <li>Orange</li>
+    <li>Green</li>
+    <li>Blue</li>
+</ul>
+
+<h3> Ordered Lists</h3>
+
+<ol>
+    <li>Head north on N Halsted St</li>
+    <li>Turn right on W Diversey Pkwy</li>
+    <li>Turn left on N Orchard St</li>
+</ol>
+
+<!-- With optional start value -->
+<!-- With reversed -->
+<ol reversed start="30"> 
+    <li>Head north on N Halsted St</li>
+    <li value="9">Turn right on W Diversey Pkwy</li> <!-- optional change of start value -->
+    <li>Turn left on N Orchard St</li>
+</ol>
+
+<h3> Description Lists</h3>
+
+<dl>
+    <dt>study</dt>
+    <dd>The devotion of time and attention to acquiring knowledge on an academic subject, especially by means of books</dd>
+    <dt>design</dt>
+    <dd>A plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made</dd>
+    <dd>Purpose, planning, or intention that exists or is thought to exist behind an action, fact, or material object</dd>
+    <dt>business</dt>
+    <dt>work</dt>
+    <dd>A person's regular occupation, profession, or trade</dd>
+</dl>
+
+<h3> Nested Lists</h3>
+<ol>
+    <li>Walk the dog</li>
+    <li>Fold laundry</li>
+    <li>
+      Go to the grocery and buy:
+      <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Cheese</li>
+      </ul>
+    </li>
+    <li>Mow the lawn</li>
+    <li>Make dinner</li>
+</ol>
+
+
+<h2>---------------------------------------------------------------------------</h2>
+
+<h2> Inserting Images</h2>
+
+<!-- width can be pixels or percentages and scales with height attribute -->
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/dog.jpg"
+        height = "250px" 
+        alt="A black, brown, and white dog wearing a kerchief">
+
+<!-- percentages will scale with window size -->
+<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/29841/dog.jpg" 
+        width = "20%" 
+        alt="A black, brown, and white dog wearing a kerchief">
+
+
+<h2>---------------------------------------------------------------------------</h2>
+
+<h2> Tables</h2>
+
+
+<table>
+    <caption>Design and Front-End Development Books</caption>
+    <tr>
+        <!-- col for table header (th) affects everything in the column while row affects everything in the row -->
+      <th scope="col">Item</th>
+      <th scope="col">Availability</th>
+      <th scope="col">Qty</th>
+      <th scope="col">Price</th>
+    </tr>
+    <tr>
+      <td>Don&#8217;t Make Me Think by Steve Krug</td>
+      <td>In Stock</td>
+      <td>1</td>
+      <td>$30.02</td>
+    </tr>
+    <tr>
+      <td>A Project Guide to UX Design by Russ Unger &#38; Carolyn Chandler</td>
+      <td>In Stock</td>
+      <td>2</td>
+      <td>$52.94 ($26.47 &#215; 2)</td>
+    </tr>
+    <tr>
+      <td>Introducing HTML5 by Bruce Lawson &#38; Remy Sharp</td>
+      <td>Out of Stock</td>
+      <td>1</td>
+      <td>$22.23</td>
+    </tr>
+    <tr>
+      <td>Bulletproof Web Design by Dan Cederholm</td>
+      <td>In Stock</td>
+      <td>1</td>
+      <td>$30.17</td>
+    </tr>
+    <!-- Use of table head, body, and foot (thead, tbody, tfoot) -->
+    <!-- <thead>
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Availability</th>
+          <th scope="col">Qty</th>
+          <th scope="col">Price</th>
+        </tr>
+      </thead> -->
+      <tbody>
+        <tr>
+          <td>Don&#8217;t Make Me Think by Steve Krug</td>
+          <td>In Stock</td>
+          <td>1</td>
+          <td>$30.02</td>
+        </tr>
+        ...
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Subtotal</td>
+          <td></td>
+          <td></td>
+          <td>$135.36</td>
+        </tr>
+        <tr>
+          <td>Tax</td>
+          <td></td>
+          <td></td>
+          <td>$13.54</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td></td>
+          <td></td>
+          <td>$148.90</td>
+        </tr>
+      </tfoot>
+  </table>
+
+
+
+
+
+
+
+
+
+<h2>---------------------------------------------------------------------------</h2>
