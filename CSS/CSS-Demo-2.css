@@ -1,0 +1,23 @@
+span {
+    height: 50px;
+    width: 75px;
+    background:#00ff00;
+    /* display: inline-block; */
+    /* float: right;*/
+}
+
+div {
+    height: 100px;
+    width: 45px;
+    background:#00ffff;
+    /* display:; */
+    /* float: left; */
+    /* clear: both; */
+}
+
+p {
+    background:#ff00ff;
+    height: 200px;
+    width: 100px;
+
+}

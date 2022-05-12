@@ -1,0 +1,207 @@
+
+/* The order of precedance of CSS, or cascading is form least to highest overwrite precedance is
+    External (.CSS files linked) 
+    Internal (use the <style> within the HTML
+    Inline (literally on the line say the style, such as using class)*/
+
+/* Last in, most precedant. if you have multiple h1 attributions of colors, the last one listed will be used
+    same with files */
+
+/* you NEED ; at the end of each alteration ( */
+
+/* It is good to keep CSS in CSS folders to keep the separate */
+
+
+/* ------------------------------------------------------------------------ */
+/* colors */
+/* also changing h1 headings, works with most other text tags */
+
+/* word attribution */
+h1{
+    color:blue;
+    background-color: thistle;
+} 
+
+/* hexadecimal */
+h1{
+    color: #0000FF;
+    background-color: #FF0000;
+} 
+
+/* RGBa */
+/* Red Green Blue and optional see through(a) */
+h1{
+    color: rgb(250,40,50);
+    background-color: rgb(50,150,250, .5);
+
+} 
+
+
+
+/* ------------------------------------------------------------------------ */
+/* styling */
+
+/* use sans-serif fonts when possible */
+
+/* Can use multiple fonts in case one does not work*/
+/* fonts which are more than one word need to use quotes */
+h1{
+    font-family: Arial, "Comic Sans", Impact;
+
+} 
+
+/* implementing font variant */
+/* implementing background color */
+h1{
+    font-variant: small-caps;
+    background-color: rgb(50,150,250, .5);
+} 
+
+/* for spanning portions beyond the input (here H1 and is different for inline) */
+h1, span{
+    background-color: rgb(50,150,250, .5);
+} 
+
+
+/* change line spacing */
+h1{
+    line-height: 50%;
+} 
+
+h1{
+    line-height: 200%;
+} 
+
+
+/* (not shown yet) implementing font size (you can use words but it is generally good to use pixels and percentages)*/
+
+
+
+/* text alignment */
+h1{
+    text-align: center;
+}
+
+
+
+/* for implementing custom fonts */
+/* @font-face{
+    font-family:mySpecialFont;
+    src: url('Colleen.ttf')
+} 
+h1{
+    font-family: mySpecialFont;
+
+}  */
+
+
+/* ------------------------------------------------------------------------ */
+/* complementary Properties */
+
+/* float repositions elements to the right or left */
+/* clear is used to keep elements away from its right, left or both sides */
+h1{
+    float: right; 
+    clear: left;
+} 
+
+/* chnages the display, can include inline-block, block, none, and more like table */
+h1{
+   display: table
+} 
+
+/* ------------------------------------------------------------------------ */
+/* Overflow */
+
+/* visible: can cause text to show at the top */
+/* hidden: hides anything that goes beyond the bounding box */
+/* scroll: gives horizontal and vertical scrollbars */
+/* auto: Adds scrollbars as needed */
+
+
+/* ------------------------------------------------------------------------ */
+/* Borders */
+
+/* benefits inline properties */
+/* Border style is what needs to be specified */
+
+/* solid is one of the inputs. Then the number of pixels and colors are set */
+div {
+    border: solid 1px #CC00AA;
+}
+
+/* the first border-width would specify Hor and Vert borders */
+/* the second specifies 3 pixel Hor and 10 pixel Vert borders*/
+/* the third specifies 3 pixel top Hor, 10 pixel Vert borders, and 20 px bottom Hor (this is tricky to conceptualize)*/
+/* the fourth is top, right, bottom, left*/
+div {
+    border-width: 3px;
+    border-width: 3px 10px;
+    border-width: 3px 10px 20px;
+    border-width: 3px 10px 20px 6px;
+}
+
+
+
+/* Margins */
+/* additional space outside the border of you and the neighbour */
+/* positive margins moves element right/down */
+/* negative margins moves element left/upward  */
+/* Can be defined by the 1-4 inputs like seen in border */
+
+
+/* Pading */
+/* same as margin but between it and its border */
+/* CSS does not support negative padding */
+/* Can be defined by the 1-4 inputs like seen in border */
+
+/* horizontally center an element (note that the element must display: block, the element must not float, must not be fixed, must have a width that is not auto*/
+/* margin:0 auto */
+
+/* width here becomes 132 (100 + (10 + 5 + 1)*2) */
+div {
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+
+/* Box sizing */
+/* takes the math out */
+/* box-sizing: content-box is a default additive */
+/* box-sizing:border-box is a width that takes content, padding and border into consideration (in the above example, with box-sizing:border-box
+    width would be 110 because padding anf worder were subtarcted but margin, as it is outside the box, is not considered */
+
+
+/* ------------------------------------------------------------------------ */
+/* link additions */
+
+/* a:link */
+/* a:visited */
+/* a:hover (activated through mouse hovering)*/
+/* a:focus (activated through keyboard tabbing like that of hovering with a mouse))*/
+/* a:active (when pressed)*/
+
+/* precedance */
+/* a:hover must come after a:link and a:visited */
+/* a:active must come after a:hover */
+
+
+/* ------------------------------------------------------------------------ */
+/* Advanced Selectors */
+
+/* (nav a) style all anchor links inside all nav tags */
+/* (nav> a)  the anchor elements must be a child of nav, no intermediate tags e.g. paragraph*/
+/* (hl + ol) elements must be at the same level and follow each other */
+
+
+/* Class selctors (.variable) */
+.thumb {
+    border: 1px solid rgb(200,200,200);
+}
+/* called via class so:
+<img src="cat.jpg" class="thumb" alt = "joe"> */
+
+/* id is similar to class selectors but use #, it can only be used once while class slectors can be used multple times */
