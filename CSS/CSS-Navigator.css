@@ -54,13 +54,12 @@ section.Basic-Link .empty-box {
     text-decoration: none;
 }
 
-/* section.Basic-Link {
-    width: 50%;
-    height: 50px;
-    display: block;
-    margin: 5px
+section.Basic-Link {
+    background: white ;
+    padding-block-end: .01%;
+    
 }
 
- */
+
 
 

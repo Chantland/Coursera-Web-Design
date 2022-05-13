@@ -1,3 +1,6 @@
+/* Note, this file was redone multiple times and therefore is no longer the original CSS-Demo-1 */
+
+
 /* add some margin space for the whole page */
 body{
     background: #B3B3B3;
@@ -11,10 +14,21 @@ header {
     padding: 15px;
 }
 
+/* back-up rules above in case the browser fails */
+header, footer{
+	background: #666666;
+	background: -moz-linear-gradient(top, #666666 0%, #00b7ea 100%);
+	background: -webkit-linear-gradient(#666666 0%, #00b7ea 100%);
+	background: -o-linear-gradient(#666666 0%, #00b7ea 100%);
+	background: linear-gradient(#666666 0%, #00b7ea 100%); 
+
+}
+
+
 
 h1{
 
-    color:rgb(200, 80, 120);
+    color:rgb(250, 250, 250);
 }
 
 nav{
@@ -23,12 +37,34 @@ nav{
     font-family: Arial, "Times New Roman";
 }
 
-section {
+/* instead of all sections taking up 30%, some can take half */
+.half {
+	width:45%;
+	margin-right: 2%;
+	display:inline-block;
+	float:left;
+}
+
+/* section {
     width: 30%;
     display: inline-block;
     float: left;
     margin-right: 2%;
+} */
+
+/* because we are using float above, we need to cancel it. */
+.whole{
+    clear:both;
 }
+
+
+nav a {
+    width: 22%;
+    display:inline-block;
+    background: rgb(250, 250, 250);
+}
+
+
 
 h2{
     color: rgb(60,50,220);
@@ -45,7 +81,6 @@ details{
 
 /* need to add clear both to stop the footer from floating */
 footer {
-    background: #666666;
     clear: both;
 }
 
