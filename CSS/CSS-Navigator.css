@@ -1,0 +1,66 @@
+section.Basic-Link a {
+    display: inline-block;
+    color: rgb(0, 0, 0); 
+    background: rgb(44, 230, 255);
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*When mouse hovers over link*/
+section.Basic-Link a:hover{  
+    background: rgb(200, 235, 255);
+    color: #0006CC;
+}
+
+/*When user tabs to this link*/
+section.Basic-Link a:focus{ 
+    background: rgb(200, 235, 255);
+    color: #0006CC;
+}
+
+/*When user clicks and holds mouse button on this link*/
+section.Basic-Link a:active{ 
+    border: 4px solid #000000;
+}
+
+
+section.Basic-Link h1 {
+    font-size: 36px;
+    color: #000000;
+    font-family: arial, "Times New Roman" ;
+}
+
+
+section.Basic-Link .empty-box {
+    display: inline-block;
+    background: rgba(211, 220, 221, 0);
+    color: rgba(0, 0, 0, 0.329);
+    border: 2px solid rgba(0, 0, 0, 0.425); 
+    font-weight: bold;
+    font-size: 24px;
+    height: 40px;
+    line-height: 40px;
+    width: 200px;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* section.Basic-Link {
+    width: 50%;
+    height: 50px;
+    display: block;
+    margin: 5px
+}
+
+ */
+
+
