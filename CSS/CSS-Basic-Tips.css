@@ -131,7 +131,7 @@ div {
 }
 
 /* the first border-width would specify Hor and Vert borders */
-/* the second specifies 3 pixel Hor and 10 pixel Vert borders*/
+/* the second specifies 3 pixel Hor (affects height thickness) and 10 pixel Vert borders (width thickness)*/
 /* the third specifies 3 pixel top Hor, 10 pixel Vert borders, and 20 px bottom Hor (this is tricky to conceptualize)*/
 /* the fourth is top, right, bottom, left*/
 div {
@@ -189,13 +189,34 @@ div {
 /* a:active must come after a:hover */
 
 
+
 /* ------------------------------------------------------------------------ */
 /* Advanced Selectors */
 
-/* (nav a) style all anchor links inside all nav tags */
+/* (nav a)  inside all nav tags, style all anchor links */
 /* (nav> a)  the anchor elements must be a child of nav, no intermediate tags e.g. paragraph*/
 /* (hl + ol) elements must be at the same level and follow each other */
+/* (h2 ~ p) general sibling selectors where each must share a parent and the tag after must procede the tag before
+    in other words, p will only be selected if it is under the same parent as h1 AND comes AFTER h1 in order*/
+/* (a[href] selects the attribute within the tag, in this case href inside a tags */
+/* a[href="http://google.com/"] select exact match, in this case, the href that holds this link text*/
+/* a[rel~="tag"] Selects an element if the given attribute value is whitespace-separated with one word being exactly as stated */
 
+
+/* :first-child, :last-child, and :only-child are used to select child order whether the first, last or only child */
+/* li:first-child {...}
+li:last-child {...}
+div:only-child {...} */
+
+/* :first-of-type, :last-of-type, & :only-of-type are the same as child selectors shown above but they look specifically for the tag specified */
+/* p:first-of-type {...}
+p:last-of-type {...}
+img:only-of-type {...} */
+
+/* :nth-child(n) & :nth-last-child(n) allow input of specific ordered child */
+/* li:nth-child(3n) {...} this affects every 3rd link repeating (so 3rd, 6th, 9th)*/
+/* li:nth-child(2n+5) {...} this affects every 2nd link repeating but only starts this pattern on the 5th link onward */
+/* li:nth-child(-n+4) {...} this will select every link before and including the 4th link (so if you have 7 links, only links 1, 2, 3, and 4 are selected) */
 
 /* Class selctors (.variable) */
 .thumb {
@@ -204,4 +225,20 @@ div {
 /* called via class so:
 <img src="cat.jpg" class="thumb" alt = "joe"> */
 
-/* id is similar to class selectors but use #, it can only be used once while class slectors can be used multple times */
+/* id is similar to class selectors but use #variable instead of the .  
+    it is called by id="variable", it can only be used once while class slectors can be used multple times */
+
+
+
+
+/* ------------------------------------------------------------------------ */
+/* operators */
+
+/* ^ match the beginning exactly
+    a [href^='http://umich'] */
+/* $ match the end exactly 
+    img[src$ = '.png'*/
+/* * wildcard 
+   a [href*='umich'] */
+
+

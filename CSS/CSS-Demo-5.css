@@ -13,7 +13,10 @@ nav a{
     background: #0FFF00;
     text-transform: uppercase;
   }
-  
-  * {
+
+  /* gives attribute to everything! */
+  /* * {
       border: 1px solid rgb(0, 0, 0)
-  }
+  } */
+
+  
