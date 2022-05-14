@@ -67,7 +67,8 @@ h2 {
     height: 600px;
     padding: 1%;
     float:left;
-
+    overflow: hidden;
+    max-width: 200px;
 }
 
 .right{
