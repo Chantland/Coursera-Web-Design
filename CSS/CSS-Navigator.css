@@ -12,7 +12,14 @@ section.Basic-Link a {
     margin: 15px;
     text-align: center;
     text-decoration: none;
+
+    transition-property: background, color;
+    transition-duration: .50s;
+    transition-timing-function: linear;
+    /* transition-delay: .25s; */
 }
+
+
 
 
 /*When mouse hovers over link*/
@@ -35,7 +42,7 @@ section.Basic-Link a:active{
     width: 196px;
 }
 
-
+/* generic styling of header */
 section.Basic-Link h1 {
     font-size: 36px;
     color: #000000;
@@ -43,6 +50,8 @@ section.Basic-Link h1 {
 }
 
 
+/* styling for when there is no more demos */
+/* because we are using DIV, repeat the above a tag but chnage some things */
 section.Basic-Link .empty-box {
     display: inline-block;
     background: rgba(211, 220, 221, 0);
@@ -59,8 +68,14 @@ section.Basic-Link .empty-box {
     text-decoration: none;
 }
 
+/*styling for just the header box section*/
 section.Basic-Link {
-    background: white ;
+    background: rgb(30, 175, 200, .5);
+	background: -moz-linear-gradient(top,rgb(23, 150, 255) 0%, rgb(30, 175, 200, .5) 50%, rgb(44, 180, 230, 0) 100%);
+	background: -webkit-linear-gradient(rgb(23, 150, 255) 0%, rgb(30, 175, 200, .5) 50%, rgb(44, 180, 230, 0) 100%);
+	background: -o-linear-gradient(rgb(23, 150, 255) 0%, rgb(30, 175, 200, .5) 50%, rgb(44, 180, 230, 0) 100%);
+	background: linear-gradient(rgb(23, 150, 255) 0%, rgb(30, 175, 200, .5) 50%, rgb(44, 180, 230, 0) 100%); 
+
     padding-block-end: .01%;
     
 }
