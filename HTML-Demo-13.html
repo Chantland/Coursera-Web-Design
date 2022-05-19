@@ -1,0 +1,35 @@
+<head>
+    <meta charset="utf-8">
+	<title> Modifying DOM example</title>
+    <script src = "JS/JS-Demo-3.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/CSS-Navigator.css"/>
+    <link rel="stylesheet" href = "CSS/CSS-Demo-8.css">
+</head>
+
+<!-- section for main website header -->
+<section class="Basic-Link">
+	<h1> Demo 13</h1>
+	  <nav>
+		<a href="HTML-Demo-12.html"> Previous Demo</a> 
+		<a href="index.html"> Main Page</a>
+		<a href="HTML-Demo-14.html"> Next Demo</a>
+	  </nav>
+	<hr>
+</section>
+
+
+
+
+<h1>Changing the Style</h1>
+<p>JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="openMe()">Open!</button>
+<button type="button" onclick="closeMe()">Close!</button>
+
+<p id="demo">Extra details...You can open and close this paragraph using the buttons above.</p>
+
+
+<div onclick = "console.log(this.innerHTML)"  > Give me more info </div>
+<div onclick = "document.getElementById('response').innerHTML = this.innerHTML" >  More info </div>
+
+<p id = "response"></p>

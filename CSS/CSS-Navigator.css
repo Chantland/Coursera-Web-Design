@@ -14,9 +14,11 @@ section.Basic-Link a {
     text-decoration: none;
 
     transition-property: background, color;
-    transition-duration: .50s;
+    transition-duration: .35s;
     transition-timing-function: linear;
     /* transition-delay: .25s; */
+
+    
 }
 
 
@@ -78,6 +80,8 @@ section.Basic-Link {
 
     padding-block-end: .01%;
     
+    /* makes it so the elements do not wrap (but I probably would like this to not cut into the margins)  */
+    white-space:nowrap;
 }
 
 
