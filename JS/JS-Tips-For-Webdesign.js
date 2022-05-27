@@ -18,10 +18,25 @@ function message(msg)
 	{
   		document.getElementById('output').innerHTML = msg + " event";
 	}
-
+	
 // ========================= Events =========================
 // (there are more than these)
 // onclick        -   event upon click
 // onmouseover    -   event upon hovering
 // onresize       -   event upon resizing the browser window
 // onload         -   event upon finishing loading a page (this is commonly used)
+
+
+// ========================= Selectors =========================
+document.getElementById('idName');  			// get ID
+document.getElementsByTagName('p');				// get Tag
+document.getElementsByClassName('thumbnail');	// Get class (returns an array)
+
+
+
+//========================= Input types =========================
+
+
+//=========================SIMPLE VALIDATION //=========================
+// novalidate   does not require validation of the inputs
+// pattern    uses regular expressions to indiocate what values are legal
