@@ -242,3 +242,18 @@ img:only-of-type {...} */
    a [href*='umich'] */
 
 
+/* ------------------------------------------------------------------------ */
+/* responsive design  */
+/* ami.responsivedesign.is */
+
+
+/*
+px : pixels
+mm, cm, in : millimeter, centimeter and inch (good for printing)
+pt : 1/72 of an inch
+pc: 12 pt (points)
+% : percent
+em : font size relative to the parent element (if not specified 1em = 12pt = 16px = 100%)
+rem: same as em but relative to the global html page 
+vw : viewport width, 1/1000th of the width
+vh : vieport height, 1/1000th of the height*/
