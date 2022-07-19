@@ -1,0 +1,32 @@
+/* body > .container {
+    padding: 60px 15px 0;
+  }
+   */
+  
+/* footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+} */
+
+/* 
+body {
+  background-color:rgb(84, 139, 117);
+} */
+
+img {
+  width: 100%;
+  max-width:900px;
+}
+
+
+
+.Intro-Info {
+  max-width: 575px;
+  /* width: 80%; */
+  display: inline-block;
+  margin: auto;
+  line-height: 1.6rem;
+  background-color: rgba(240, 240, 240, .6);
+  border: 5px solid rgba(255, 255, 255, .4);;
+  padding: 2rem;
+}
