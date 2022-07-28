@@ -1,0 +1,10 @@
+/* li { list-style-image: url(img/Calloment_symbol_small.png); }
+
+li::marker {
+    content: url(/Calloment_symbol_small.png);
+} */
+
+
+ul {
+    list-style-image: url(../img/Calloment_symbol_small.png);
+}

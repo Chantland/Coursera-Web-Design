@@ -21,6 +21,7 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-md fixed-top bg-dark bg-udc">
+			<div class="nav_title"> Magic Cube</div>
 			<div class="container">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fas fa-bars"></i></button>
@@ -28,28 +29,16 @@
 
 					<ul class="navbar-nav">
 						<li class="nav-item">
-						<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('projects').id)">
-						<a class="nav-link">Projects</a>
+						<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('Home').id)">
+						<a class="nav-link">Home</a>
 						</button>
 						</li>
 
 						<li class="nav-item">
-						<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('Academic').id)">
-						<a class="nav-link">Publications</a>
+						<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('Info').id)">
+						<a class="nav-link">Info</a>
 						</button>
-						</li>
-
-						<li class="nav-item">
-						<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('teach').id)">
-						<a class="nav-link">Teaching</a>
-						</button>
-						</li>
-
-						<li class="nav-item">
-						<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('education').id)">
-						<a class="nav-link">Education, Experience, and Certifications</a>
-						</button>
-						</li>               
+						</li>          
 					</ul>
 				</div>
 
@@ -57,7 +46,7 @@
 		</nav>
 			<script>
 			function onClickFunction(ID) {
-				var el_list = ["Academic", "projects", "teach", "education"];
+				var el_list = ["Home", "Info"];
 				// make all elements associated in the above array blank then display/unhide the one element(ID) selected
 				el_list.forEach(el => {
 				document.getElementById(el).style.display = "none";
@@ -71,40 +60,99 @@
 
 	<main role="main" class="container">
 		<!-- maybe superfluous to have row here -->
-		<div class="row">
+
 			<!-- The left side  optional picture splash -->
 			<!-- <div class="col-md-2">
 			</div> -->
 
 			<!-- Main content -->
-			<section id="Home" class="mt-5">
-				<div class="text-center mb-5">
-					<img src="img/Meta-Homepage.jpg" alt="Home Banner">
+		<section id="Home" class="mt-5" style="display: none;">
+			<div class="text-center mb-5">
+				<img src="img/Meta-Homepage.jpg" alt="Home Banner">
+			</div>
+			<div class="row">
+				<div class="col-md-7 Intro-Info">
+					<h3 class="text-center"> Magic Cube</h1>
+					<p>
+						<a href="https://magic.wizards.com/en">Magic The Gathering</a> is a trading card game where players construct decks to battle it out amongst each other. 
+						While normally you would construct these decks by buying individual packs of cards, a magic cube allows you to use prebuilt packs over and over again without the need to purchase more.
+						This Magic cube set seeks to go a step further and create completely new custom cards and add completely new rules.
+
+					</p>
 				</div>
-				<div class="row">
-					<div class="col-md-7 Intro-Info">
-						<h3 class="text-center"> Magic Cube</h1>
-						<p>
-							<a href="https://magic.wizards.com/en">Magic The Gathering</a> is a trading card game where players construct decks to battle it out amongst each other. 
-							While normally you would construct these decks by buying individual packs of cards, a magic cube allows you to use prebuilt packs over and over again without the need to purchase more.
-							This Magic cube set seeks to go a step further and create completely new custom cards and add completely new rules.
-	
-						</p>
-					</div>
-					<div class="col-md-5">
-						<ul>
-							<li>dufsudi</li>
-							<li>dufsudi</li>
-							<li>dufsudi</li>
-						</ul>
+				<div class="col-md-5 center_al">
+					<ul>
+						<li><b>560+</b> cards</li>
+						<li><b>6 mana colors</b> giving 21 pairings</li>
+						<li><b>15</b> new keywords and abilities</li>
+					</ul>
+				</div>
+			</div>
+		
+			<!-- <img class="bullet_point" src="img/Calloment_symbol.png"> -->
+
+			<div class = "row" id= "spaced_card">
+				<div class="col-md-6 col-xxl-3 center_box">
+					<div class="card_holder">
+						<img class="card" src="img/Cards/19 M Edge Dancer.jpg">
+						<div>
+							<p> Play with creatures belonging to 4 factions</p>
+						</div>
 					</div>
 				</div>
+				<div class="col-md-6 col-xxl-3 center_box">
+					<div class="card_holder">
+						<img class="card" src="img/Cards/304 Porcelain Heirs.jpg">
+						<div>
+							<p> Draft special cards that can give instant synergies</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xxl-3 center_box" >
+					<div class="card_holder">
+						<img class="card" src="img/Cards/CC 4 .jpg">
+						<div>
+							<p> Adapt your commander in unique ways</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-xxl-3 center_box">
+					<div class="card_holder">
+						<img class="card" src="img/Cards/Game Achievement 11.jpg">
+						<div>
+							<p> Complete achievements for bragging rights</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-
-			</section>
-
-		</div>
-		<section class="">
+		<section id="Info" class="mt-5" >
+			<div class="row">
+				<h1 class="title_head"> Magic Cube Info</h1>
+				<div class="col-12">
+					<div class="list-group list-group-flush" id="myList" role="tablist">
+					  <a class="list-group-item list-group-item-action ec-list-tab active" data-toggle="list" href="#DiceMe" role="tab">Dice Me</a>
+					  <a class="list-group-item list-group-item-action ec-list-tab" data-toggle="list" href="#API-Dice" role="tab">FastAPI Dice</a>
+					  <a class="list-group-item list-group-item-action ec-list-tab" data-toggle="list" href="#EEGExtract" role="tab">EEGExtract</a>
+					  <a class="list-group-item list-group-item-action ec-list-tab" data-toggle="list" href="#ChoiceAnalysis" role="tab">Choice Analysis</a>
+					</div>
+				  </div>
+				  <div class="col-8">
+					<div class="tab-content">
+					  <div class="tab-pane fade show active " id="DiceMe" role="tabpanel"> <a href="https://github.com/Chantland/Dice_Me" target='_blank'> Dice_Me </a><span class="badge project-badge-python">Python</span> <br>
+						Convert image to a dice mosaic using scikit-learn to determine optimal feature preservation. Includes optional arguments for desired output dice.</div>
+					  <div class="tab-pane fade " id="API-Dice" role="tabpanel"><a href="https://github.com/Chantland/FastAPI-Dice-APP" target='_blank'> FastAPI-Dice-APP </a><span class="badge project-badge-python">Python</span><span class="badge project-badge-fastapi">FastAPI</span><span class="badge project-badge-sqlite">SQLite</span><span class="badge project-badge-html">HTML</span><br>
+						Integrating an API using the <a href="https://github.com/Chantland/Dice_Me" target='_blank'> Dice_Me </a> project. Uses a relational database (SQLight), API (FastAPI), Python, JavaScript, CSS, and HTML. </div>
+					  <div class="tab-pane fade " id="EEGExtract" role="tabpanel"><a href="https://github.com/Chantland/EEGExtract" target='_blank'>EEGExtract </a><span class="badge project-badge-python ">Python</span> <br>
+						A python library for extracting features from Electroencephalography (EEG) data. Actively maintained and used by several researchers worldwide.</div>
+					  <div class="tab-pane fade " id="ChoiceAnalysis" role="tabpanel"><a href="https://github.com/Chantland/CVT_Logistic_Analysis" target='_blank'>CVT_Logistic_Analysis </a><span class="badge project-badge-matlab ">MATLAB</span> <br>
+						Matlab library implementing per-subject binary logistical regression analysis.</div>
+					</div>
+				  </div>
+			</div>
+		</section>
+		<!-- <section class="">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque viverra justo nec ultrices dui. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. In mollis nunc sed id semper risus in. Risus viverra adipiscing at in tellus integer feugiat scelerisque. Rhoncus est pellentesque elit ullamcorper dignissim cras. Dui sapien eget mi proin sed libero enim sed. Et odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Egestas maecenas pharetra convallis posuere morbi leo urna. Rhoncus aenean vel elit scelerisque mauris pellentesque.</p>
 	
 			<p>Augue neque gravida in fermentum et sollicitudin. Semper feugiat nibh sed pulvinar proin gravida hendrerit. Luctus venenatis lectus magna fringilla urna porttitor rhoncus dolor purus. Posuere lorem ipsum dolor sit amet consectetur adipiscing. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Sit amet aliquam id diam maecenas ultricies mi eget mauris. Ultrices in iaculis nunc sed. Dolor morbi non arcu risus quis varius quam quisque id. Sit amet risus nullam eget felis eget nunc. Ipsum dolor sit amet consectetur adipiscing elit. Non pulvinar neque laoreet suspendisse. Tincidunt eget nullam non nisi.</p>
@@ -124,13 +172,13 @@
 			<p>Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula. Id velit ut tortor pretium viverra suspendisse potenti. Rhoncus est pellentesque elit ullamcorper. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Ac odio tempor orci dapibus ultrices in. Duis convallis convallis tellus id interdum velit laoreet. Blandit volutpat maecenas volutpat blandit aliquam etiam erat. Morbi leo urna molestie at elementum. Nunc eget lorem dolor sed viverra. In tellus integer feugiat scelerisque varius. Blandit aliquam etiam erat velit. Platea dictumst vestibulum rhoncus est.</p>
 			
 			<p>Massa tincidunt dui ut ornare lectus sit. Elementum eu facilisis sed odio morbi quis. Posuere lorem ipsum dolor sit amet. Fringilla urna porttitor rhoncus dolor purus non. Pellentesque massa placerat duis ultricies lacus sed turpis. Et ligula ullamcorper malesuada proin libero. Egestas purus viverra accumsan in nisl. Nam at lectus urna duis convallis. Varius vel pharetra vel turpis nunc. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Facilisis volutpat est velit egestas dui. Accumsan lacus vel facilisis volutpat est velit egestas dui id. Eget nunc lobortis mattis aliquam faucibus. Sed nisi lacus sed viverra tellus. Eget mi proin sed libero enim sed faucibus. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Euismod quis viverra nibh cras pulvinar mattis nunc sed blandit. Id consectetur purus ut faucibus pulvinar elementum integer enim. Nec feugiat nisl pretium fusce. Donec pretium vulputate sapien nec.</p>
-		</section>	
-
+		</section>	 -->
+	
 	</main>
 	
 
-	<footer>
-		<p></p>
+	<footer class="footer">
+		<div>Created by Eric Chantland</div>
 	</footer>
 
 
@@ -139,10 +187,10 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
 	<!-- maybe unnecessary code, determine later -->
-    <!-- <script>window.jQuery || document.write('<script src="js-bootstrap/jquery-slim.min.js"><\/script>')</script> -->
-    <!-- <script src="js-bootstrap/popper.min.js"></script> -->
+    <script>window.jQuery || document.write('<script src="js-bootstrap/jquery-slim.min.js"><\/script>')</script>
+    <script src="js-bootstrap/popper.min.js"></script>
 
-    <script src="js-bootstrap/bootstrap.min.js"></script>
+    <script src="js-bootstrap/bootstrap.min.js"></script> 
 	<script src="Bootstrap/js/bootstrap.min.js"></script>
 	
 </body>

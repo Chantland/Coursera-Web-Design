@@ -1,17 +1,12 @@
-/* body > .container {
-    padding: 60px 15px 0;
-  }
-   */
-  
-/* footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
-} */
 
-/* 
+
+
+
+
 body {
-  background-color:rgb(84, 139, 117);
-} */
+  font-family: Helvetica Tahoma Georgia;
+  /* margin-bottom: 60px; */
+}
 
 img {
   width: 100%;
@@ -19,6 +14,32 @@ img {
 }
 
 
+.nav_title {
+  color: rgb(199 199 199);
+  padding: 0 4em 0 2em;
+  font-size: 30px;
+}
+
+/* for navbar */
+button.navbutton {
+	background-color:transparent;  
+	border:none; 
+	color:white; 
+	outline-style:none;
+}
+.nav-link:hover{
+  color: rgb(29, 150, 161);
+}
+.nav-link {
+  color: #fff;
+}
+.navbar-toggler {
+  text-align: center;
+
+}
+.bg-udc {
+  background-color: rgb(0 61 66)!important;
+}
 
 .Intro-Info {
   max-width: 575px;
@@ -27,6 +48,102 @@ img {
   margin: auto;
   line-height: 1.6rem;
   background-color: rgba(240, 240, 240, .6);
-  border: 5px solid rgba(255, 255, 255, .4);;
+  border: 5px solid rgba(255, 255, 255, .4);
   padding: 2rem;
+  border-radius: 10px;
+}
+
+
+
+.center_al {
+  margin: auto;
+}
+
+.center_al > ul {
+  font-size: 1.5em;
+  padding: 2em;
+  }
+
+.center_al > ul > li {
+  padding: .7em .2em;
+  list-style-image: url(../img/Calloment_symbol_med.png);
+}
+
+/* li:before {
+  position: absolute;
+  left: 50%;
+  margin-left: -1em;
+} */
+
+.bullet_point {
+  width: 100px;
+}
+
+
+.center_box {
+  margin: auto;
+  text-align: center;
+}
+
+.title_head{
+  margin: auto;
+  text-align: center;
+  padding: 2em;
+}
+.card_holder {
+  width: 3in;
+  /* width: 80%; */
+  display: inline-block;
+  margin: auto;
+  margin-top: 4em;
+  /* line-height: 1.6rem; */
+  background-color: rgba(192, 192, 192, 0.6);
+  border: 5px solid rgba(255, 255, 255, .4);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.card_holder > div {
+  background-color: rgba(142, 243, 218, 0.6);
+  border-radius: 15px;
+  margin-top: 1em;
+  padding: .5em;
+}
+
+.card_holder p {
+  margin: 0 auto;
+  font-size: 1.2em;
+  font-weight: bold;
+} 
+
+
+
+.card {
+  width: 2.5in;
+  margin: 0 auto;
+  /* padding: 1em; */
+}
+
+#spaced_card {
+  padding-top: 2em;
+  padding-bottom: 8em;
+}
+
+/* note, maybe fix footer so it is always at the bottom? */
+.footer {
+  position: absolute;
+  /* bottom: 0; */
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: rgb(0 61 66);
+}
+
+.footer > div {
+  padding-right: 2em;
+  padding-left: 2em;
+  text-align: left ;
+  font-size: 24px;
+  color: rgb(255, 255, 255, .6);
 }
