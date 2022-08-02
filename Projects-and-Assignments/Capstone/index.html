@@ -21,32 +21,37 @@
 <body>
 	<header>
 		<nav class="navbar navbar-expand-md fixed-top bg-dark bg-udc">
-			<div class="nav_title"> Magic Cube</div>
 			<div class="container">
+				<div class="nav_title"> Magic Cube</div>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fas fa-bars"></i></button>
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 
 					<ul class="navbar-nav">
-						<li class="nav-item">
+						<li class="nav-item navbar-spacing">
 						<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('Home').id)">
-						<a class="nav-link">Home</a>
+						Home
 						</button>
 						</li>
 
-						<li class="nav-item">
-						<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('Info').id)">
-						<a class="nav-link">Info</a>
+						<li class="nav-item navbar-spacing">
+						<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('Rules').id)">
+							Rules
 						</button>
-						</li>          
+						</li>
+						
+						<li class="nav-item navbar-spacing">
+						<button type="button" class="navbutton" onclick="onClickFunction(document.getElementById('Cards').id)">
+							Cards
+						</button>
+						</li>              
 					</ul>
 				</div>
-
 			</div>
 		</nav>
 			<script>
 			function onClickFunction(ID) {
-				var el_list = ["Home", "Info"];
+				var el_list = ["Home", "Rules", "Cards"];
 				// make all elements associated in the above array blank then display/unhide the one element(ID) selected
 				el_list.forEach(el => {
 				document.getElementById(el).style.display = "none";
@@ -72,7 +77,7 @@
 			</div>
 			<div class="row">
 				<div class="col-md-7 Intro-Info">
-					<h3 class="text-center"> Magic Cube</h1>
+					<h3 class="text-center"> Magic Cube</h3>
 					<p>
 						<a href="https://magic.wizards.com/en">Magic The Gathering</a> is a trading card game where players construct decks to battle it out amongst each other. 
 						While normally you would construct these decks by buying individual packs of cards, a magic cube allows you to use prebuilt packs over and over again without the need to purchase more.
@@ -94,7 +99,7 @@
 			<div class = "row" id= "spaced_card">
 				<div class="col-md-6 col-xxl-3 center_box">
 					<div class="card_holder">
-						<img class="card" src="img/Cards/19 M Edge Dancer.jpg">
+						<img class="card" src="img/Cards/19EdgeDancer.jpg" alt="Card Edge Dancer">
 						<div>
 							<p> Play with creatures belonging to 4 factions</p>
 						</div>
@@ -102,7 +107,7 @@
 				</div>
 				<div class="col-md-6 col-xxl-3 center_box">
 					<div class="card_holder">
-						<img class="card" src="img/Cards/304 Porcelain Heirs.jpg">
+						<img class="card" src="img/Cards/304PorcelainHeirs.jpg" alt="Draft Card Porcelain Heirs">
 						<div>
 							<p> Draft special cards that can give instant synergies</p>
 						</div>
@@ -110,7 +115,7 @@
 				</div>
 				<div class="col-md-6 col-xxl-3 center_box" >
 					<div class="card_holder">
-						<img class="card" src="img/Cards/CC 4 .jpg">
+						<img class="card" src="img/Cards/CC2.jpg" alt="Comander Conspiracy Card number 2">
 						<div>
 							<p> Adapt your commander in unique ways</p>
 						</div>
@@ -118,7 +123,7 @@
 				</div>
 				<div class="col-md-6 col-xxl-3 center_box">
 					<div class="card_holder">
-						<img class="card" src="img/Cards/Game Achievement 11.jpg">
+						<img class="card" src="img/Cards/GameAchievement11.jpg" alt="Game achievement sorry, what colors are you running? ">
 						<div>
 							<p> Complete achievements for bragging rights</p>
 						</div>
@@ -127,30 +132,124 @@
 			</div>
 		</section>
 
-		<section id="Info" class="mt-5" >
-			<div class="row">
-				<h1 class="title_head"> Magic Cube Info</h1>
-				<div class="col-12">
-					<div class="list-group list-group-flush" id="myList" role="tablist">
-					  <a class="list-group-item list-group-item-action ec-list-tab active" data-toggle="list" href="#DiceMe" role="tab">Dice Me</a>
-					  <a class="list-group-item list-group-item-action ec-list-tab" data-toggle="list" href="#API-Dice" role="tab">FastAPI Dice</a>
-					  <a class="list-group-item list-group-item-action ec-list-tab" data-toggle="list" href="#EEGExtract" role="tab">EEGExtract</a>
-					  <a class="list-group-item list-group-item-action ec-list-tab" data-toggle="list" href="#ChoiceAnalysis" role="tab">Choice Analysis</a>
-					</div>
-				  </div>
-				  <div class="col-8">
-					<div class="tab-content">
-					  <div class="tab-pane fade show active " id="DiceMe" role="tabpanel"> <a href="https://github.com/Chantland/Dice_Me" target='_blank'> Dice_Me </a><span class="badge project-badge-python">Python</span> <br>
-						Convert image to a dice mosaic using scikit-learn to determine optimal feature preservation. Includes optional arguments for desired output dice.</div>
-					  <div class="tab-pane fade " id="API-Dice" role="tabpanel"><a href="https://github.com/Chantland/FastAPI-Dice-APP" target='_blank'> FastAPI-Dice-APP </a><span class="badge project-badge-python">Python</span><span class="badge project-badge-fastapi">FastAPI</span><span class="badge project-badge-sqlite">SQLite</span><span class="badge project-badge-html">HTML</span><br>
-						Integrating an API using the <a href="https://github.com/Chantland/Dice_Me" target='_blank'> Dice_Me </a> project. Uses a relational database (SQLight), API (FastAPI), Python, JavaScript, CSS, and HTML. </div>
-					  <div class="tab-pane fade " id="EEGExtract" role="tabpanel"><a href="https://github.com/Chantland/EEGExtract" target='_blank'>EEGExtract </a><span class="badge project-badge-python ">Python</span> <br>
-						A python library for extracting features from Electroencephalography (EEG) data. Actively maintained and used by several researchers worldwide.</div>
-					  <div class="tab-pane fade " id="ChoiceAnalysis" role="tabpanel"><a href="https://github.com/Chantland/CVT_Logistic_Analysis" target='_blank'>CVT_Logistic_Analysis </a><span class="badge project-badge-matlab ">MATLAB</span> <br>
-						Matlab library implementing per-subject binary logistical regression analysis.</div>
-					</div>
-				  </div>
+		<section id="Rules" class="mt-5" style="display: none;">
+			<h1 class="title_head"> Magic Rules</h1>
+			<div class="container">
+				<div class="info_hub">
+					<button type="button" class="toggle_button" onclick="ButttonFunction(document.getElementById('Magic_info').id)">Magic The Gathering Rules</button>
+					<section id="Magic_info" class="row info-box">
+						<div class="col-md">
+							<div class = "info-box-text"> Magic is a game revolving around attempting to get your opponents' lifetotal down to 0. Typically this is done with creatures but there are "spells" and other in game effects which might reduce one's lifetotal. Additionally, players may win in other diverse means that we may not cover here.</div>
+						</div>
+						<div class="col-md">
+							<div class="embed-responsive embed-responsive-16by9 ">
+								<iframe class="embed-responsive-item screen-size" src="https://www.youtube.com/embed/RZyXU1L3JXk" allowfullscreen></iframe>
+							</div>
+							<a class="more-info-link" href="https://magic.wizards.com/en/intro?gclid=Cj0KCQjw852XBhC6ARIsAJsFPN3RsvtZSS6hAQRbrZXMsivC9__joaqU7FS0jQfHNmhxPgSdAEguxCMaAgpVEALw_wcB" title="More info on Magic">
+								More Info
+							</a>
+						</div>
+					</section>
+
+
+					<button type="button" class="toggle_button" onclick="ButttonFunction(document.getElementById('Commander').id)">Commander Rules</button>
+					<section id="Commander" class="row info-box">
+						<div class="col-md">
+							<div class = "info-box-text"> Commander is a variant of Magic (there are a lot) that has a player choose a Legendary creature as their "Commander". This card dictates the kind of cards a person may put in their decks. Player's life totals are 40 and decks are 100 cards where every card (except basic lands) must be completely unique! </div>
+						</div>
+						<div class="col-md">
+							<div class="embed-responsive embed-responsive-16by9 ">
+								<iframe class="embed-responsive-item screen-size" src="https://www.youtube.com/embed/42noux9KKEM" allowfullscreen></iframe>
+							</div>
+							<a class="more-info-link" href="https://magic.wizards.com/en/formats/commander" title="More info on Commander">
+								More Info
+							</a>
+						</div>
+					</section>
+
+
+					<button type="button" class="toggle_button" onclick="ButttonFunction(document.getElementById('Draft').id)">Draft Rules</button>
+					<section id="Draft" class="row info-box">
+						<div class="col-md">
+							<div class = "info-box-text"> Draft is a variant of Magic where players attempt to construct a new deck by openning up packs of cards then choosing a single card and passing the pack to the next person. Players will do this until 3 packs are finished than attempt to make a deck of 40 cards with the cards chosen.</div>
+						</div>
+						<div class="col-md">
+							<div class="embed-responsive embed-responsive-16by9 ">
+								<iframe class="embed-responsive-item screen-size" src="https://www.youtube.com/embed/fUqPxSYPfrA" allowfullscreen></iframe>
+							</div>
+							<a class="more-info-link" href="https://magic.wizards.com/en/articles/archive/how-play-limited/what-booster-draft-and-how-it-done-2017-11-07" title="More info on Drafting">
+								More Info
+							</a>
+						</div>
+					</section>
+
+
+					<button type="button" class="toggle_button" onclick="ButttonFunction(document.getElementById('Cube').id)">Cube Rules</button>
+					<section id="Cube" class="row info-box">
+						<div class="col-md">
+							<div class = "info-box-text"> A "cube" is a way for players to draft (see above) a game of magic without necessarily having to purchase whole boosterpacks each time they want to play. The constructor of a cube decides the rules of the cube and fills it with any magic cards they wish. These rules can be found below.</div>
+						</div>
+						<div class="col-md">
+							<div class="embed-responsive embed-responsive-16by9 ">
+								<iframe class="embed-responsive-item screen-size" src="https://www.youtube.com/embed/rNDBTRG6keM" allowfullscreen></iframe>
+							</div>
+							<a class="more-info-link" href="https://mtg.fandom.com/wiki/Cube_Draft" title="More info on a Cube">
+								More Info
+							</a>
+						</div>
+					</section>
+
+
+				</div>
 			</div>
+			<script>
+				function ButttonFunction(ID) {
+					var el_list = ["Magic_info", "Commander", "Draft", "Cube"];
+					// make all elements associated in the above array blank then display/unhide the one element(ID) selected
+					if (document.getElementById(ID).style.display != "inline-flex") {
+						var hidden = true
+					}
+
+					el_list.forEach(el => {
+					document.getElementById(el).style.display = "none";
+					});
+					if (hidden==true) {
+						document.getElementById(ID).style.display = "inline-flex";
+					}
+				}
+			</script>
+
+			<h2 class="sub_head"> Unique Cube Rules</h2>
+			<div class="rule-info-box center_al">
+				<ul>
+					<li> Drafting Commander Format
+						<ul>
+							<li>Hybrid mana <img class="img-in-line-15" src="img/hybrid_mana.png" alt="Hybrid white black mana symbol"> can count for 1 or multiple color identities</li>
+							<li>Colorless mana <img class="img-in-line-15" src="img/colorless_mana.png" alt="colorless mana symbol"> is fully a color in every aspect and is distinct from generic mana <img class="img-in-line-15" src="img/generic_mana.jpg" alt="generic mana symbol"></li>
+						</ul>
+					</li>
+					<li> 60 card decks</li>
+					<li> "Commander Conspiracy" and "Game Conspiracy"
+						<ul>
+							<li>May have 1 of each active</li>
+							<li>Affect the game in some way and must be declared at the start of the game</li>
+							<li>Drafted like any other card</li>
+						</ul>
+					</li>
+
+					<li> Game Achievements
+						<ul>
+							<li>Are functionally useless but fun</li>
+							<li>Must be declared by the player at time of achievement!</li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</section>
+
+		<section id="Cards" class="mt-5" >
+
 		</section>
 		<!-- <section class="">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque viverra justo nec ultrices dui. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus et. In mollis nunc sed id semper risus in. Risus viverra adipiscing at in tellus integer feugiat scelerisque. Rhoncus est pellentesque elit ullamcorper dignissim cras. Dui sapien eget mi proin sed libero enim sed. Et odio pellentesque diam volutpat commodo sed egestas egestas fringilla. Egestas maecenas pharetra convallis posuere morbi leo urna. Rhoncus aenean vel elit scelerisque mauris pellentesque.</p>

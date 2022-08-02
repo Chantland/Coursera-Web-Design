@@ -14,28 +14,35 @@ img {
 }
 
 
+
+/* for navbar */
+
 .nav_title {
   color: rgb(199 199 199);
-  padding: 0 4em 0 2em;
+  padding: 0 4em 0 0;
   font-size: 30px;
 }
 
-/* for navbar */
 button.navbutton {
 	background-color:transparent;  
 	border:none; 
-	color:white; 
+	color:white!important; 
 	outline-style:none;
 }
-.nav-link:hover{
-  color: rgb(29, 150, 161);
+
+button.navbutton:hover {
+  color: rgb(29, 150, 161)!important;
 }
-.nav-link {
-  color: #fff;
-}
+
+
+
 .navbar-toggler {
   text-align: center;
+}
 
+.navbar-spacing{
+  padding: 0 1em;
+  font-size: 1.1em;
 }
 .bg-udc {
   background-color: rgb(0 61 66)!important;
@@ -69,6 +76,17 @@ button.navbutton {
   list-style-image: url(../img/Calloment_symbol_med.png);
 }
 
+.center_al > ul > li > ul {
+  font-size: .8em;
+  padding: 1em;
+  }
+
+.center_al > ul > li > ul > li {
+  list-style-image: url(../img/Calloment_symbol_small.png);
+}
+
+
+
 /* li:before {
   position: absolute;
   left: 50%;
@@ -90,6 +108,15 @@ button.navbutton {
   text-align: center;
   padding: 2em;
 }
+
+.sub_head {
+  margin: auto;
+  text-align: center;
+  margin-top: 4em;
+  padding: 10px;
+}
+
+
 .card_holder {
   width: 3in;
   /* width: 80%; */
@@ -128,6 +155,222 @@ button.navbutton {
   padding-top: 2em;
   padding-bottom: 8em;
 }
+
+
+.info_hub {
+  text-align: center;
+  padding: 2em 0em;
+}
+
+.toggle_button {
+  width: 80%;
+  height: 30px;
+  line-height: 24px;
+  background: rgb(0 59 82);
+  margin: .4em auto;
+  text-align: center;
+  color: rgb(255 255 255);
+  border: 3px solid rgba(255, 255, 255, .4);
+  border-radius: 10px;
+
+  transition-property: background, color;
+  transition-duration: .35s;
+  transition-timing-function: linear;
+}
+
+.toggle_button:hover {
+  background: rgb(1 82 129);
+  color: rgb(170 171 207);
+}
+
+/* for  tabbing but issue right now is it will hold if a person click on a link until a person click off a link*/
+.toggle_button:focus{ 
+  background: rgb(1 82 129);
+  color: rgb(170 171 207);
+}
+
+/*When user clicks and holds mouse button on this link*/
+.toggle_button:active{ 
+  border: 6px solid #000000;
+  line-height: 18px;
+}
+
+.info-box {
+  background: rgb(219 219 219 / 60%);
+  border: 5px solid rgba(255, 255, 255, .4);
+  border-radius: 3px;
+  /* width: 400px; */
+  /* height: 400px; */
+  display: none;
+  padding: 1em;
+  margin: .4em auto;
+}
+
+.info-box-text {
+  width: 272px;
+  font-size: 18px;
+  display: inline-block;
+  background-color: rgb(167 165 165 / 60%);
+  border: 5px solid rgba(255, 255, 255, .4);
+  border-radius: 15px;
+  padding: 1rem;
+  text-align: left;
+}
+
+
+
+/* a link buttons */
+a.more-info-link{
+  display: inline-block;
+  color: rgb(255 255 255);
+  background: rgb(0 59 82);
+  border: 4px solid rgba(255, 255, 255, .4);
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 34px;
+  height: 64px;
+  line-height: 56px;
+  width: 272px;
+  /* margin: 15px; */
+  margin: .22em 0em;
+  text-align: center;
+  text-decoration: none;
+  transition-property: background, color;
+  transition-duration: .35s;
+  transition-timing-function: linear;
+
+
+}
+
+
+
+a.more-info-link:hover{  
+  background: rgb(1 82 129);
+  color: rgb(170 171 207);
+}
+
+/*When user tabs to this link*/
+a.more-info-link:focus{ 
+  background: rgb(1 82 129);
+  color: rgb(170 171 207);
+}
+
+/*When user clicks and holds mouse button on this link*/
+a.more-info-link:active{ 
+  border: 8px solid #000000;
+  line-height: 48px;
+}
+
+
+.screen-size {
+  width: 272px;
+  height: 153px;
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+  border: 4px solid rgba(255, 255, 255, .4);
+  border-radius: 15px;
+}
+
+/* medium screens */
+@media screen and (min-width:768px){
+  
+  .info-box-text {
+    border-radius: 15px 0px 0px 15px;
+  }
+  
+  .screen-size {
+    width: 304px;
+    height: 171px;
+    margin-top: 0em;
+    margin-bottom: 1.8em;
+    border-radius: 0px 15px 0px 0px;
+
+  }
+  a.more-info-link {
+    width: 304px;
+    height: 98px;
+    line-height: 90px;
+    border-radius: 0px 0px 15px 0px;
+  }
+
+  a.more-info-link:active{ 
+    border: 8px solid #000000;
+    line-height: 82px;
+  }
+}
+
+
+
+
+/* large screens */
+@media screen and (min-width:992px){
+  
+  .info-box-text {
+    width: 3.4in;
+    height: 370px;
+    font-size: 22px;
+    margin: 1.04em auto;
+    background-color: rgb(167 165 165 / 60%);
+    border: 5px solid rgba(255, 255, 255, .4);
+    border-radius: 15px 0px 0px 15px;
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .screen-size {
+    width: 490px;
+    /* width: 48vw; */
+    height: 280px;
+    /* height: 29vw; */
+    margin-top: 1.5em;
+    margin-bottom: .5em;
+    border: 4px solid rgba(255, 255, 255, .4);
+    border-radius: 0px 15px 0px 0px;
+  }
+
+  
+  a.more-info-link{
+    display: inline-block;
+    color: rgb(255 255 255);
+    background: rgb(0 59 82);
+    border: 4px solid rgba(255, 255, 255, .4);
+    border-radius: 0px 0px 15px 0px;
+    font-weight: bold;
+    font-size: 34px;
+    height: 64px;
+    line-height: 56px;
+    width: 490px;
+    /* margin: 15px; */
+    margin: .22em 0em;
+    text-align: center;
+    text-decoration: none;
+  
+  }
+
+  a.more-info-link:active{ 
+    border: 8px solid #000000;
+    line-height: 48px;
+  }
+}
+
+
+
+
+
+
+
+.rule-info-box {
+    width: 90%;
+    display: block;
+}
+
+
+
+.img-in-line-15 {
+  width: 15px;
+}
+
+
 
 /* note, maybe fix footer so it is always at the bottom? */
 .footer {
