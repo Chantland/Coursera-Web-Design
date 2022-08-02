@@ -61,19 +61,22 @@ button.navbutton:hover {
 }
 
 
-
-.center_al {
+/* old, delete after done */
+/* .center_al {
   margin: auto;
 }
 
 .center_al > ul {
   font-size: 1.5em;
-  padding: 2em;
-  }
+  padding: 1em;
+  padding-left: 2em;
+  text-align: left;
+}
 
 .center_al > ul > li {
   padding: .7em .2em;
   list-style-image: url(../img/Calloment_symbol_med.png);
+  list-style-type: none;
 }
 
 .center_al > ul > li > ul {
@@ -83,19 +86,39 @@ button.navbutton:hover {
 
 .center_al > ul > li > ul > li {
   list-style-image: url(../img/Calloment_symbol_small.png);
-}
-
-
-
-/* li:before {
-  position: absolute;
-  left: 50%;
-  margin-left: -1em;
 } */
 
-.bullet_point {
-  width: 100px;
+
+
+
+
+.center_al
+{
+margin-left: 0;
+padding-left: 0;
 }
+
+.center_al > ul {
+  font-size: 1.5em;
+  padding: 1em;
+  /* padding-left: 2em; */
+  text-align: left;
+}
+
+.center_al > ul > li
+{
+  background-image: url(../img/Calloment_symbol_blank.png);
+  background-repeat: no-repeat;
+  background-position: 0 0em;
+  background-size: 1.5em;
+  list-style-type: none;
+  padding: 0em .5em 1.5em 2em;
+}
+
+.center_al > ul > li > ul {
+  font-size: .8em;
+  padding: .4em;
+  }
 
 
 .center_box {
@@ -199,8 +222,6 @@ button.navbutton:hover {
   background: rgb(219 219 219 / 60%);
   border: 5px solid rgba(255, 255, 255, .4);
   border-radius: 3px;
-  /* width: 400px; */
-  /* height: 400px; */
   display: none;
   padding: 1em;
   margin: .4em auto;
@@ -271,6 +292,49 @@ a.more-info-link:active{
   border-radius: 15px;
 }
 
+/* link info-box but does not "display: none" */
+.card-box {
+  background: rgb(219 219 219 / 60%);
+  border: 5px solid rgba(255, 255, 255, .4);
+  border-radius: 30px;
+  padding: 1em;
+  margin: 4em auto;
+  display: inline-flex;
+  max-width: 1100px;
+}
+
+
+.card-box-header {
+  width: 300px;
+  font-size: 24px;
+  display: inline-block;
+  background-color: rgb(167 165 165 / 60%);
+  border: 5px solid rgba(255, 255, 255, .4);
+  border-radius: 15px;
+  padding: .5rem;
+}
+
+.card-box-header > h3{
+margin-bottom: 0em;
+}
+
+
+.custom-carousel-frame {
+  width: 270px;
+  padding: 1em;
+  border-radius: 15px;
+  margin: auto;
+}
+
+
+.rule-info-box {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+
+
 /* medium screens */
 @media screen and (min-width:768px){
   
@@ -297,6 +361,15 @@ a.more-info-link:active{
     border: 8px solid #000000;
     line-height: 82px;
   }
+
+  .rule-info-box {
+    width: 80%;
+  }
+
+  .card-box-header {
+    width: 500px;
+  }
+  
 }
 
 
@@ -351,6 +424,9 @@ a.more-info-link:active{
     border: 8px solid #000000;
     line-height: 48px;
   }
+  .rule-info-box {
+    width: 61%;
+  }
 }
 
 
@@ -358,11 +434,6 @@ a.more-info-link:active{
 
 
 
-
-.rule-info-box {
-    width: 90%;
-    display: block;
-}
 
 
 
@@ -390,3 +461,7 @@ a.more-info-link:active{
   font-size: 24px;
   color: rgb(255, 255, 255, .6);
 }
+
+
+
+
