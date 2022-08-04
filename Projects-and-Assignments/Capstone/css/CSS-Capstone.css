@@ -1,8 +1,4 @@
 
-
-
-
-
 body {
   font-family: Helvetica Tahoma Georgia;
   /* margin-bottom: 60px; */
@@ -59,36 +55,6 @@ button.navbutton:hover {
   padding: 2rem;
   border-radius: 10px;
 }
-
-
-/* old, delete after done */
-/* .center_al {
-  margin: auto;
-}
-
-.center_al > ul {
-  font-size: 1.5em;
-  padding: 1em;
-  padding-left: 2em;
-  text-align: left;
-}
-
-.center_al > ul > li {
-  padding: .7em .2em;
-  list-style-image: url(../img/Calloment_symbol_med.png);
-  list-style-type: none;
-}
-
-.center_al > ul > li > ul {
-  font-size: .8em;
-  padding: 1em;
-  }
-
-.center_al > ul > li > ul > li {
-  list-style-image: url(../img/Calloment_symbol_small.png);
-} */
-
-
 
 
 
@@ -432,19 +398,11 @@ margin-bottom: 0em;
 
 
 
-
-
-
-
-
-
 .img-in-line-15 {
   width: 15px;
 }
 
 
-
-/* note, maybe fix footer so it is always at the bottom? */
 .footer {
   position: absolute;
   /* bottom: 0; */
