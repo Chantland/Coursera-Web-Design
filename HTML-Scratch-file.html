@@ -1,8 +1,8 @@
-<ul>
-    <li> AAA </li>  
-    <li> BBB </li></li> 
-      <li> CCC </li> 
-      
-    <li> DDD </li>  
-    <li> EEE </li>
-    </ul>
+for (var pixel of image.values()) {
+  x = pixel.getX();
+  y = pixel.getY();
+  if (x > y) {
+    pixel.setRed(0);
+    pixel.setBlue(0);
+  }
+}
