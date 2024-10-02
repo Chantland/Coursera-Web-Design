@@ -18,7 +18,5 @@ function myfunction() {
     }else{
         document.write("Empty Array");
     }
-    console.log('peepee')
+    console.log('t')
 }
-
-
